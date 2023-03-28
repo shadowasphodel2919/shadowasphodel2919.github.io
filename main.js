@@ -1,7 +1,7 @@
 import './style.css'
-import { projects } from './projects'
-import { blogs } from './blogs';
-import { links } from './links';
+import { projects } from './projects.js'
+import { blogs } from './blogs.js';
+import { links } from './links.js';
 
 document.querySelector('#app').innerHTML = `
       <section class="banner sticky">
