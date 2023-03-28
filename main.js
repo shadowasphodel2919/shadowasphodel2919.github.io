@@ -1,4 +1,4 @@
-import './style.css'
+// import './style.css'
 import { projects } from './projects.js'
 import { blogs } from './blogs.js';
 import { links } from './links.js';
