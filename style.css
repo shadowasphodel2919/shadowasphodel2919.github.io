@@ -6,6 +6,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html{
+  width: 100vw;
+}
 :root {
   --clr-1: #dbd8e3;
   --clr-2: #5c5470;
@@ -17,7 +20,6 @@
 body{
   background-color: #000000;
   color: #ffffff;
-  width: 100vw;
 }
 #app{
   display: grid;
