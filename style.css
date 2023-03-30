@@ -6,9 +6,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-html{
-  width: 100vw;
-}
 :root {
   --clr-1: #dbd8e3;
   --clr-2: #5c5470;
