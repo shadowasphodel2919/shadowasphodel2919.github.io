@@ -30,7 +30,7 @@ a:hover{
   text-decoration-thickness: 1px;
 }
 .banner{
-  height: 100vh;
+  height: auto;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -71,7 +71,7 @@ a:hover{
   /* background-color: rgb(9, 11, 10); */
   max-width: 80vw;
   gap: 2em;
-  max-height: 80vh;
+  max-height: auto;
   /* overflow: hidden; */
 }
 
