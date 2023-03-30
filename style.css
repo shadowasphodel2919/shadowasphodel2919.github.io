@@ -17,6 +17,7 @@
 body{
   background-color: #000000;
   color: #ffffff;
+  width: 100vw;
 }
 #app{
   display: grid;
