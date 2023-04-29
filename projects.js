@@ -22,7 +22,7 @@ export function projects(element) {
             </a>
         </div>
         <div class="project-2">
-            <a href="https://github.com/shadowasphodel2919/GameOfBlocks">
+            <a href="https://github.com/shadowasphodel2919/visualise-sort">
             <div class="card">
                 <h3>Sorting Visualizer</h3>
                 <p>Created a sorting visualizer using Swing framework.</p>

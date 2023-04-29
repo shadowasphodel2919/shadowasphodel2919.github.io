@@ -244,3 +244,19 @@ a:hover{
   display: flex;
   align-items: center;
 }
+
+/* 
+.content{
+  width: 10rem;
+  height: 10rem;
+}
+
+.tagcloud {
+    font-family: 'Poppins', sans-serif;  
+    font-size: 20px;
+    margin: auto;
+    width: 50%;
+  }
+  .tagcloud--item:hover {
+    color: #ffffff;
+  } */
