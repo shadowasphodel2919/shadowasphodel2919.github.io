@@ -43,10 +43,10 @@ function typeText(element, text, callback) {
             clearInterval(interval);
             if (callback) callback();
           }
-        }, 100);
-      }, 300); // Added a delay of 1000ms before starting the deletion animation
+        }, 50);
+      }, 200); // Added a delay of 1000ms before starting the deletion animation
     }
-  }, 100);
+  }, 50);
 }
 
 const heads = ['Taha Jamal', 'Web Developer', 'Game Developer', 'Software Developer'];
@@ -68,14 +68,14 @@ function animateNext(i) {
         typeText(head, '', () => {
           animateNext(i + 1);
         });
-      }, 300); // Added a delay of 1000ms between the end of the typing animation and the start of the deletion animation
+      }, 100); // Added a delay of 1000ms between the end of the typing animation and the start of the deletion animation
     });
   }
   if(i >= heads.length){
     head.innerHTML = finH
     setTimeout(()=>{
       document.querySelector('.finHead').classList.add('active');
-    }, 500)
+    }, 300)
   }
 }
 animateNext(0);

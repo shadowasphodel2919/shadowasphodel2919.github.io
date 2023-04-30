@@ -22,7 +22,7 @@ export function blogs(element){
         let output = '';
         posts.forEach((item)=> {
             output += `
-                <div class="item">
+                <div class="item" onClick="window.location.href = '${item.link}'">
                     <div class="thumb">
                         <img src="${item.thumbnail}" class="blog-topImg"></img>
                     </div>
