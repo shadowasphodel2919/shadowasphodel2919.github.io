@@ -20,7 +20,8 @@ export function blogs(element){
             text
         }
         let output = '';
-        posts.forEach((item)=> {
+        for(let i = 0; i < 3; i++){
+            let item = posts[i];
             output += `
                 <div class="item" onClick="window.location.href = '${item.link}'">
                     <div class="thumb">
@@ -32,7 +33,7 @@ export function blogs(element){
                 </div>
                 </div>
             `
-        })
+        }
         document.querySelector('.blog').innerHTML = output
     })
 }

@@ -19,9 +19,6 @@ document.querySelector('#app').innerHTML = `
           <iframe src="resume.pdf" style="width:600px; height:500px;" frameborder="0"></iframe>
         </div>
       </section>
-      <section class="banner">
-        <span class="content"></span>
-      </section>
       <section class="link-banner banner">
       </section>
       </div>
