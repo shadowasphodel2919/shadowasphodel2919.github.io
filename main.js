@@ -83,10 +83,10 @@ animateNext(0);
 
 const myTags = [
   'JavaScript', 'CSS', 'HTML',
-  'C', 'C++', 'React',
+  'Unity 3D', 'C#', 'React',
   'Python', 'Java', 'git',
-  'django', 'Node.js', 'OpenCV',
-  'GCP', 'MySQL', 'jQuery',
+  'MongoDB', 'Node.js', 'VueJS',
+  'GCP', 'MySQL'
 ];
 
 let tagCloud

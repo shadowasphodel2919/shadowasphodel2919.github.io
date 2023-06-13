@@ -26,12 +26,6 @@ a{
   text-decoration: none;
   color: #ffffff;
 }
-a:hover{
-  /* text-decoration: underline; */
-  /* text-decoration-thickness: 1px; */
-  /* font-size:1.5em;
-  transition: 0.1s ease-out; */
-}
 .banner{
   min-height: 100vh;
   width: 100%;
@@ -78,24 +72,33 @@ a:hover{
 
 .projects{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
   padding: 20px;
-  /* background-color: rgb(9, 11, 10); */
   max-width: 80vw;
   gap: 2em;
   max-height: 80vh;
-  /* overflow: hidden; */
 }
 
+.project-title p{
+  font-size: 5vw;
+  font-weight: 1000;
+}
 .project-1{
   display: grid;
-  grid-template-columns: 2fr 1fr 3fr;
+  grid-template-columns: 2fr 2fr 2fr;
   gap: 2em;
 }
 
 .project-2{
   display: grid;
-  grid-template-columns: 1fr 1fr 2fr;
+  grid-template-columns: 2fr 2fr 2fr;
+  gap: 2em;
+}
+
+.project-rows{
+  display: flex;
+  flex-direction: column;
   gap: 2em;
 }
 
@@ -174,23 +177,33 @@ a:hover{
   width:100%;
   height:100%;
   display:flex;
-  /* flex-direction: column; */
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.blog-title p{
+  font-size: 5vw;
+  font-weight: 1000;
+}
+
+.blog-items{
+  display:flex;
   justify-content:center;
   align-items:center;
   flex-wrap:wrap;
-  padding:60px 0;
   position:relative;
-  font-family:'Manrope';
   gap: 2em;
 }
 
 .blog .item{
   cursor: pointer;
   float:left;
-  width:300px;
+  min-height: 100%;
+  width:15vw;
   overflow:hidden;
-  border-radius:11px;
-  border:1px solid #ddd;
+  border-radius:1vw;
+  border:0.05vw solid #ddd;
 }
 
 .blog .item .thumb{
@@ -220,7 +233,7 @@ a:hover{
 }
 .blog .item .text h2{
   color:#ffffff;
-  font-size: 2vw;
+  font-size: 1.5vw;
   margin:0 0 15px 0;
 }
 .blog .item .text h2 a{
@@ -234,11 +247,11 @@ a:hover{
 .blog .item .text p{
   color:#666;
   font-weight: 1000;
-  font-size: 1.5vw;
+  font-size: 1vw;
   margin:0 0 15px 0;
 }
 
-.blog a:hover{
+.links a:hover{
   font-size:1.5em;
   transition: 0.1s ease-out;
 }
@@ -262,6 +275,16 @@ a:hover{
 .resume h1{
   display: flex;
   align-items: center;
+}
+
+.links{
+  width:100%;
+  height:100%;
+  display:flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  gap: 1em;
 }
 
 /* 

@@ -1,6 +1,7 @@
 export function projects(element) {
   element.innerHTML = `
   <div class="projects">
+        <div class="project-rows">
         <div class="project-1">
             <a href="https://github.com/shadowasphodel2919/Cryptogrammer">
             <div class="card">
@@ -40,6 +41,10 @@ export function projects(element) {
                 <p>Mandatory Open AI application created during API hype</p>
             </div>
             </a>
+        </div>
+        </div>
+        <div class="project-title">
+        <p>Projects</p>
         </div>
     </div>
   `

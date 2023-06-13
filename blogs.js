@@ -1,6 +1,10 @@
 export function blogs(element){
     element.innerHTML = `
-    <div class="blog gallery">
+    <div class="blog">
+    <div class="blog-title">
+    <p>Blogs</p>
+    </div>
+    <div class="blog-items"></div>
     </div>
     `
     fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@stupidsherlock')
@@ -29,11 +33,11 @@ export function blogs(element){
                     </div>
                 <div class="text">
                     <h2 class="blog-title">${shortenText(item.title,0,30)+'...'}</h2>
-                    <p class="blog-intro">${'...' + shortenText(toText(item.content),60, 300)+ '...'}</p>
+                    <p class="blog-intro">${'...' + shortenText(toText(item.content),0, 200)+ '...'}</p>
                 </div>
                 </div>
             `
         }
-        document.querySelector('.blog').innerHTML = output
+        document.querySelector('.blog-items').innerHTML = output
     })
 }
