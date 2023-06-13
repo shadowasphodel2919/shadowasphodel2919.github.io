@@ -15,7 +15,7 @@ document.querySelector('#app').innerHTML = `
       </section>
       <section class="resume-banner banner">
         <div class="resume">
-          <h1>Need something compact</h1>
+          <h1>Need something compact ? </h1>
           <iframe src="resume.pdf" style="width:600px; height:500px;" frameborder="0"></iframe>
         </div>
       </section>
@@ -53,10 +53,13 @@ const heads = ['Taha Jamal', 'Web Developer', 'Game Developer', 'Software Develo
 
 const finH = `
 <div class="finHead">
+<div class="left">
 <p class="name">Taha Jamal</p>
 <div class="sub">
 <p>Software Developer</p>
 </div>
+</div>
+<span class="tag-cloud"></span>
 </div>
 <span class="content"></span>
 `;
@@ -75,43 +78,48 @@ function animateNext(i) {
     head.innerHTML = finH
     setTimeout(()=>{
       document.querySelector('.finHead').classList.add('active');
+      createCloud()
     }, 300)
   }
 }
 animateNext(0);
 
-// const myTags = [
-//   'JavaScript', 'CSS', 'HTML',
-//   'C', 'C++', 'React',
-//   'Python', 'Java', 'git',
-//   'django', 'Node.js', 'OpenCV',
-//   'GCP', 'MySQL', 'jQuery',
-// ];
+const myTags = [
+  'JavaScript', 'CSS', 'HTML',
+  'C', 'C++', 'React',
+  'Python', 'Java', 'git',
+  'django', 'Node.js', 'OpenCV',
+  'GCP', 'MySQL', 'jQuery',
+];
 
-// var tagCloud = TagCloud('.content', myTags,{
+let tagCloud
 
-// // radius in px
-// radius: 250,
+function createCloud(){
+  tagCloud = TagCloud('.tag-cloud', myTags,{
 
-// // animation speed
-// // slow, normal, fast
-// maxSpeed: 'fast',
-// initSpeed: 'fast',
+    // radius in px
+    radius: 250,
+    
+    // animation speed
+    // slow, normal, fast
+    maxSpeed: 'fast',
+    initSpeed: 'fast',
+    
+    // 0 = top
+    // 90 = left
+    // 135 = right-bottom
+    direction: 135,
+    
+    // interact with cursor move on mouse out
+    keep: true
+    
+    });
+}
 
-// // 0 = top
-// // 90 = left
-// // 135 = right-bottom
-// direction: 135,
-
-// // interact with cursor move on mouse out
-// keep: true
-
-// });
-
-// //To change the color of text randomly
-// // var colors = ['#34A853', '#FBBC05', '#4285F4', '#7FBC00', 'FFBA01', '01A6F0'];
-// // var random_color = colors[Math.floor(Math.random() * colors.length)];
-// // document.querySelector('.content').style.color = random_color;
+//To change the color of text randomly
+// var colors = ['#34A853', '#FBBC05', '#4285F4', '#7FBC00', 'FFBA01', '01A6F0'];
+// var random_color = colors[Math.floor(Math.random() * colors.length)];
+// document.querySelector('.tag-cloud').style.color = random_color;
 
 const projectBanner = document.querySelector('.project-banner')
 projects(projectBanner)
